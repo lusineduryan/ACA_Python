@@ -1,3 +1,5 @@
+# find the number of 1-s in a 5- number
+
 input_number = input()
 
 int_number = int(input_number, base = 2)
