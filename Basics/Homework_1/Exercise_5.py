@@ -6,8 +6,7 @@ input_number_2 = input()
 int_number_1 = int(input_number_1, base = 2)
 int_number_2 = int(input_number_2, base = 2)
 
-bin_number_1 = bin(int_number_1)
-bin_number_2 = bin(int_number_2)
+print(bin((2 ** 0) * (int_number_1 // 2 ** 0 % 2 + int_number_2 // 2 ** 0 % 2) + \
+          (2 ** 1) * (int_number_1 // 2 ** 1 % 2 + int_number_2 // 2 ** 1 % 2) + \
+          (2 ** 2) * (int_number_1 // 2 ** 2 % 2 + int_number_2 // 2 ** 2 % 2)))
 
-sum = int_number_1 + int_number_2
-print(bin(sum))
