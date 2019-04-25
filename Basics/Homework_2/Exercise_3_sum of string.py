@@ -7,5 +7,4 @@ input_number = input()
 int_number_1 = int(input_number[0:3])
 int_number_2 = int(input_number[-3:])
 
-print(int_number_1, int_number_2)
 print(int_number_1 + int_number_2)
