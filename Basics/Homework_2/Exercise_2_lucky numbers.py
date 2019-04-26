@@ -7,3 +7,5 @@ int_number_coll = (int(input_number[0]), int(input_number[1]), int(input_number[
 
 print(sum(int_number_coll[::2]) == sum(int_number_coll[1::2]))
 
+
+
