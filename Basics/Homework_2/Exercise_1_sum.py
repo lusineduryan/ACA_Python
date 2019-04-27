@@ -1,4 +1,4 @@
-# Compute i=01000ai, where a0=0, d=5 and ai=ai-1+(i % 3)*d
+ # Compute i=01000ai, where a0=0, d=5 and ai=ai-1+(i % 3)*d
 
 a_0 = 0
 d = 5
