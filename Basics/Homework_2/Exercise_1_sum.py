@@ -1,5 +1,7 @@
- # Compute i=01000ai, where a0=0, d=5 and ai=ai-1+(i % 3)*d
+# Compute i=01000ai, where a0=0, d=5 and ai=ai-1+(i % 3)*d
+import time
 
+start = time.perf_counter()
 a_0 = 0
 d = 5
 a_1 = a_0 + 1 % 3 * d
@@ -13,3 +15,5 @@ prog_1 = range(a_1, end_1, d_1)
 prog_2 = range(a_2, end_2, d_2)
 
 print(sum(prog_1) + 2 * sum(prog_2) + a_0)
+
+print(time.perf_counter() - start)
