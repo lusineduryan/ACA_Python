@@ -13,3 +13,4 @@ for i in range(2, k + 1):
 
 print(A)
 for i in A:
+    k
