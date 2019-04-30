@@ -5,12 +5,11 @@
 # The sum of its digits is 12. Still not less than 10, so repeating again, we add the digits again and get 3, which is finally less than 10.
 # So the root of 78996 is 3. Given a natural number N, find its root, outputting intermediary results in the process.
 
-input_number = input()
-int_number = int(input_number)
-digits_coll = map(int, input_number)
+number = input()
 sum = 0
 
-while int_number > 10:
-    sum += sum(digits_coll)
-    print(input_number)
-    input_number = sum
+while int(number) > 10:
+    sum += sum(map(int, number[::]))
+    print(number)
+    number = sum
+else: break
