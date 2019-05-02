@@ -3,8 +3,10 @@
 k = int(input())
 
 count_2 = 0
-while k % 2 == 0:
+t = k
+while t % 2 == 0:
     count_2 += 1
+    t /= 2
 
 print(2, count_2)
 
@@ -14,4 +16,4 @@ for i in range(3, k, 2):
     while m % i == 0:
         count += 1
         m /= i
-    print(i, count)
+    if count != 0: print(i, count)
