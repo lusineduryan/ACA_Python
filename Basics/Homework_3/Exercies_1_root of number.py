@@ -6,10 +6,10 @@
 # So the root of 78996 is 3. Given a natural number N, find its root, outputting intermediary results in the process.
 
 number = input()
-sum = 0
 
-while int(number) > 10:
-    sum += sum(map(int, number[::]))
+while int(number) >= 10:
+    sum_of_digits = sum(map(int, number[::]))
     print(number)
-    number = sum
-else: break
+    number = str(sum_of_digits)
+
+print(number)
