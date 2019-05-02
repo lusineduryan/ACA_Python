@@ -1,7 +1,6 @@
 k = int(input())
 
 A = []
-count = 0
 for i in range(2, k + 1):
     bool = True
     if k % i == 0:
@@ -13,4 +12,9 @@ for i in range(2, k + 1):
 
 print(A)
 for i in A:
-    k
+    m = k
+    count = 0
+    while m % i == 0:
+        count += 1
+        m /= i
+    print(f'({i}, {count})')
