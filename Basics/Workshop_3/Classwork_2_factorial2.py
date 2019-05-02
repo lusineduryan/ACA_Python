@@ -1,3 +1,5 @@
+# Print the remainder of the division of the factorial for the given natural number and a prime number.
+
 k = int(input())
 p = 7
 

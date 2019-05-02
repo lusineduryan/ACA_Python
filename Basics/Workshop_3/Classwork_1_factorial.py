@@ -1,3 +1,5 @@
+# Print thr factorial for the given natural number.
+
 input_number = int(input())
 
 fact = 1

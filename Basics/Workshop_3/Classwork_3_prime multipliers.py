@@ -1,3 +1,5 @@
+# Output all the prime multiplers of the given number and the degrees.
+
 k = int(input())
 
 A = []
