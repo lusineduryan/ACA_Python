@@ -3,7 +3,5 @@
 
 input_number = int(input())
 
-
-
-
-
+def isPrime (arg):
+    
