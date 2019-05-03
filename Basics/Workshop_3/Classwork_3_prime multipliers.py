@@ -9,7 +9,7 @@ for i in range(2, k + 1):
         for j in range(2, i):
             if i % j == 0:
                 bool = False
-                break;
+                break
         if bool == True: A.append(i)
 
 print(A)
