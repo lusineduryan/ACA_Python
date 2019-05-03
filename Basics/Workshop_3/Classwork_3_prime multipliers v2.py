@@ -12,8 +12,7 @@ print(2, count_2)
 
 for i in range(3, k, 2):
     count = 0
-    m = k
-    while m % i == 0:
+    while k % i == 0:
         count += 1
-        m /= i
+        k /= i
     if count != 0: print(i, count)
