@@ -5,12 +5,12 @@
 # 20 under the second, no stool under the third, and a stool of height 5 under the last one.
 # The summary height of the stools is 55.
 
-def sum_of_remainders(arg):
+def sum_of_dif(arg):
     max_value = max(arg)
-    sum_of_rem = 0
+    dif_sum = 0
     for i in arg:
-        sum_of_rem += max_value - i
-    return sum_of_rem
+        dif_sum += max_value - i
+    return dif_sum
 
 heights = list(map(float, input().split()))
-print(sum_of_remainders(heights))
+print(sum_of_dif(heights))
