@@ -14,3 +14,4 @@ def sum_of_dif(arg):
 
 heights = list(map(float, input().split()))
 print(sum_of_dif(heights))
+
