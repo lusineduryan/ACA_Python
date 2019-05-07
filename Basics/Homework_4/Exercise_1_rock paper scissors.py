@@ -9,6 +9,13 @@ def game_result(arg1, arg2):
     '1' > '2'
     return int(arg1 > arg2)
 
-input_number = int(input())
-while int(input_number) != 0:
-    input_number = input()
+def game():
+    hum = input()
+    while int(hum) != 0:
+        comp = str(random.randint(1,4))
+        hum = input()
+        return game_result(hum, comp)
+
+print(game())
+
+
