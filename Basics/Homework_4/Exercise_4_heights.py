@@ -5,9 +5,9 @@
 # 20 under the second, no stool under the third, and a stool of height 5 under the last one.
 # The summary height of the stools is 55.
 
-heights = list(map(int, input().split()))
-
 def sum_of_dif(arg):
     return max(arg) * len(arg) - sum(arg)
+
+heights = list(map(int, input().split()))
 
 print(sum_of_dif(heights))
