@@ -13,7 +13,21 @@ def input_tuples_list(number):
         list_of_tuples.append(tuple(input().split(',')))
     return list_of_tuples
 
-print(sorted(input_tuples_list(int(input()))))
+# print(sorted(input_tuples_list(int(input()))))
+
+def swap_items(arg1, arg2, arg3):
+    temp = arg1[arg2]
+    arg1[arg2] = arg1[arg3]
+    arg1[arg3] = temp
+    return arg1
+
+def sorting_tuples(arg):
+    base = arg[0]
+    for i in arg:
+        if i[0] > base[0]:
+            swap_items(arg, arg.index(i), arg.index(base))
+
+
 
 
 
