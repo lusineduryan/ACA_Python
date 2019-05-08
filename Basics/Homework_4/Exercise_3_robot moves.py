@@ -18,24 +18,28 @@ def point_move(arg):
     x_axis = 0
     y_axis = 0
     if arg[0] == "LEFT":
-        x_axis -= arg[1]
+        x_axis -= int(arg[1])
     elif arg[0] == "RIGHT":
-        x_axis += arg[1]
+        x_axis += int(arg[1])
     elif arg[0] == "UP":
-        y_axis += arg[1]
+        y_axis += int(arg[1])
     elif arg[0] == "DOWN":
-        y_axis -= arg[1]
+        y_axis -= int(arg[1])
     return x_axis, y_axis
 
 def end_point_coordinates(arg):
-    x, y = 0
+    x, y = 0, 0
     for i in arg:
-        x_move, y_move = point_move(arg[i])
+        x_move, y_move = point_move(i)
         x += x_move
         y += y_move
     return x, y
 
-def distance(arg1, arg2):
-    return int((arg1 ** 2 + arg2 ** 2) ** 0.5)
+def distance(arg):
+    return int((arg[0] ** 2 + arg[1] ** 2) ** 0.5)
 
 print(distance(end_point_coordinates(input_tuples_list(int(input())))))
+
+
+
+
