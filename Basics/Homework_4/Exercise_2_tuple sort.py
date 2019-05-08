@@ -7,17 +7,13 @@
 # Json,21,85
 # Then, the output of the program should be:[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')].
 
-def input_tuples(number):
+def input_tuples_list(number):
     list_of_tuples = []
     for i in range(1, number + 1):
-        l = tuple(input().split(','))
-        list_of_tuples.append(l)
+        list_of_tuples.append(tuple(input().split(',')))
     return list_of_tuples
 
-def tuple_sort(arg):
-    return sorted(arg)
-
-print(tuple_sort(input_tuples(int(input()))))
+print(sorted(input_tuples_list(int(input()))))
 
 
 
