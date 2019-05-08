@@ -12,9 +12,9 @@ def game_result(arg1, arg2):
 def game():
     hum = input()
     while int(hum) != 0:
-        comp = str(random.randint(1,4))
+        comp = str(random.randint(1, 4))
         hum = input()
-        return game_result(hum, comp)
+        print(game_result(hum, comp))
 
 print(game())
 
