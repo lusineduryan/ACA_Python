@@ -15,19 +15,23 @@ def input_tuples_list(number):
 
 # print(sorted(input_tuples_list(int(input()))))
 
-def swap_items(arg1, arg2, arg3):
-    temp = arg1[arg2]
-    arg1[arg2] = arg1[arg3]
-    arg1[arg3] = temp
-    return arg1
+def tuple_comparison(arg1, arg2):
+    if arg1[0] > arg2[0]:
+        return True
+    elif arg1[0] == arg2[0]:
+        if int(arg1[1]) > int(arg2[1]):
+            return True
+        elif int(arg1[1] == int(arg2[1])):
+            if int(arg1[2]) > int(arg2[2]):
+                return True
 
 def sorting_tuples(arg):
-    base = arg[0]
-    for i in arg:
-        if i[0] > base[0]:
-            swap_items(arg, arg.index(i), arg.index(base))
+    for i in range(len(arg)):
+        for j in range(len(arg) - i - 1):
+            if tuple_comparison(arg[j], arg[j + 1]):
+                arg[j], arg[j + 1] = arg[j + 1], arg[j]
+    return arg
 
-
-
+print(sorting_tuples(input_tuples_list(int(input()))))
 
 
