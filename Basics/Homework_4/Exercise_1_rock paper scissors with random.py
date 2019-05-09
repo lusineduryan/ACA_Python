@@ -26,7 +26,7 @@ def game():
         current_time = datetime.datetime.now()
         sum_of_time_components = current_time.year + current_time.month + current_time.day + \
                                  current_time.hour + current_time.minute + current_time.second + current_time.microsecond
-        PC = sum_of_time_components % 3 + 1
+        PC = str(sum_of_time_components % 3 + 1)
         print(PC)
         human_score, PC_score = round_result(human, PC)
         current_human_score += human_score
