@@ -8,6 +8,4 @@
 def sum_of_dif(arg):
     return max(arg) * len(arg) - sum(arg)
 
-heights = list(map(int, input().split()))
-
-print(sum_of_dif(heights))
+print(sum_of_dif(list(map(int, input().split()))))

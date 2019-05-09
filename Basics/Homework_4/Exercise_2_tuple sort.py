@@ -19,7 +19,7 @@ def tuple_comparison(arg1, arg2):
     elif arg1[0] == arg2[0]:
         if int(arg1[1]) > int(arg2[1]):
             return True
-        elif int(arg1[1] == int(arg2[1])):
+        elif int(arg1[1]) == int(arg2[1]):
             if int(arg1[2]) > int(arg2[2]):
                 return True
 
@@ -31,4 +31,3 @@ def sorting_tuples(arg):
     return arg
 
 print(sorting_tuples(input_tuples_list(int(input()))))
-
