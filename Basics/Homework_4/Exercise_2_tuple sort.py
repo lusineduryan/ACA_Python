@@ -13,8 +13,6 @@ def input_tuples_list(number):
         list_of_tuples.append(tuple(input().split(',')))
     return list_of_tuples
 
-# print(sorted(input_tuples_list(int(input()))))
-
 def tuple_comparison(arg1, arg2):
     if arg1[0] > arg2[0]:
         return True
@@ -33,5 +31,4 @@ def sorting_tuples(arg):
     return arg
 
 print(sorting_tuples(input_tuples_list(int(input()))))
-
 

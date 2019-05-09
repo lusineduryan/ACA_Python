@@ -3,19 +3,36 @@
 
 import random
 
-def game_result(arg1, arg2):
-    '3' > '1'
-    '2' > '3'
-    '1' > '2'
-    return int(arg1 > arg2)
+def round_result(arg1, arg2):
+    score1, score2 = 0, 0
+    if arg1 == '3' and arg2 == '1':
+        score1 += 1
+    elif arg1 == '2' and arg2 == '3':
+        score1 += 1
+    elif arg1 == '1' and arg2 == '2':
+        score1 += 1
+    elif arg2 == '3' and arg1 == '1':
+        score2 += 1
+    elif arg2 == '2' and arg1 == '3':
+        score2 += 1
+    elif arg2 == '1' and arg1 == '2':
+        score2 += 1
+    return score1, score2
 
 def game():
-    hum = input()
-    while int(hum) != 0:
-        comp = str(random.randint(1, 4))
-        hum = input()
-        print(game_result(hum, comp))
+    human = input()
+    current_human_score, current_PC_score = 0, 0
+    while int(human) != 0:
+        PC = str(random.randint(1, 3))
+        print(PC)
+        human_score, PC_score = round_result(human, PC)
+        current_human_score += human_score
+        current_PC_score += PC_score
+        print(f'human: {current_human_score} vs {current_PC_score} :PC')
+        human = input()
+    else:
+        print('Game Over')
 
-print(game())
+game()
 
 
