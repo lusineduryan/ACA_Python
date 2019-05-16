@@ -30,3 +30,20 @@ new_file.close()
 new_file = open("newFile.txt", "r")
 print(new_file.read())
 new_file.close()
+
+file = open("newFile.txt", "w")
+print(file.write("brand new content"))
+file.close()
+
+try:
+    file = open("newFile.txt")
+    print(file.read())
+finally:
+    file.close()
+
+with open("newFile.txt") as f:
+    print(f.read())
+
+
+
+
