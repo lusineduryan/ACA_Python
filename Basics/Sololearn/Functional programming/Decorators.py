@@ -4,6 +4,7 @@ def decor(func):
 def print_asterix:
     print("*" * 15)
 
+
 decorated = decor(print_asterix)
 
 
