@@ -19,6 +19,7 @@ class Dog:
 fido = Dog("Fido", "brown")
 print(fido.name)
 fido.bark()
+
 print(fido.legs)
 print(Dog.legs)
 
