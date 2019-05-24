@@ -13,5 +13,11 @@ print_asterix = decorated
 
 print_asterix()
 
+@decor
+def print_asterix():
+    print("*" * 15)
+
+print_asterix()
+
 
 
