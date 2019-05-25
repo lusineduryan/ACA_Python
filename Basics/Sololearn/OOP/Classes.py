@@ -4,6 +4,7 @@ class Cat:
         self.legs = legs
 
 felix = Cat("ginger", 4)
+
 print(felix.color)
 
 class Dog:
