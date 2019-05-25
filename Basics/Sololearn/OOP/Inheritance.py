@@ -15,6 +15,7 @@ rex = Dog("Rex", "black")
 print(rex.color)
 rex.bark()
 
+
 class Wolf(Dog):
     def bark(self):
         print("Auuu")
