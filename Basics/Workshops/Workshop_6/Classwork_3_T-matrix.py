@@ -1,4 +1,8 @@
-from .Classwork_2_scalarProduct import scal
+#from .Classwork_2_scalarProduct import scal
+
+def scal(arg1, arg2):
+    assert len(arg1) == len(arg2)
+    return sum(map(lambda i, j: i * j, arg1, arg2))
 
 def trans(arg):
     res = []
