@@ -14,4 +14,14 @@ def mat(arg1, arg2):
         res.append(line)
     return res
 
-print(mat([[1,1],[2,2]], [[1,0], [0,1]]))
+print(*mat([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
+
+def mat_2(arg1, arg2):
+    assert len(arg1[0]) == len(arg2[0])
+    res = []
+    for i in range(len(arg1)):
+        temp_res = list(map(scal, [arg1[i]] * len(arg2), arg2))
+        res.append(temp_res)
+    return res
+
+print(*mat_2([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
