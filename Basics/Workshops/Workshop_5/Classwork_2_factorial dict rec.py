@@ -1,10 +1,8 @@
 fact = {0: 1}
 
 def factorial(n):
-    if n in fact:
-        return fact[n]
-    else:
+    if n not in fact:
         fact[n] = factorial(n - 1) * n
-        return fact[n]
+    return fact[n]
 
 print(factorial(int(input())))

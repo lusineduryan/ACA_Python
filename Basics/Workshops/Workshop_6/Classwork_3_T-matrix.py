@@ -30,3 +30,8 @@ def mat_prod(arg1, arg2):
     return res
 
 print(mat_prod(a,b))
+
+def trans_2(arg):
+    return list(zip(*arg))
+
+print(*trans_2([[1,1,1], [2,2,2]]), sep = '\n')
