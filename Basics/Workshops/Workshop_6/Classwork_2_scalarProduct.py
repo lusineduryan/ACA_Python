@@ -39,3 +39,4 @@ d = list(map(lambda x: [x] * 2, a))
 print(d)
 c = [b] * 2
 print(c)
+print(list(map(scal, d, c)))
