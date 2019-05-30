@@ -29,9 +29,13 @@ def mat_2(arg1, arg2):
 
 def mat_3(arg1, arg2):
     assert len(arg1[0]) == len(arg2[0])
-    return list(map(scal, list(map(lambda x: [x] * len(arg2), arg1)), arg2 * len(arg2)))
+    return list(map(list(map(scal, )), list(map(lambda x: [x] * len(arg2), arg1)), [arg2] * len(arg2)))
 
 #print(*mat_3([[1,1],[2,2]], [[3,3], [4,4]]), sep = '\n')
 
 a = [[1,1],[2,2]]
-print(list(map(lambda x: x * 2, a)))
+b = [[3,3],[4,4]]
+d = list(map(lambda x: [x] * 2, a))
+print(d)
+c = [b] * 2
+print(c)
