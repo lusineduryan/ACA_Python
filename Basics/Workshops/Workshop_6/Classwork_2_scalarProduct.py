@@ -2,7 +2,7 @@ def scal(arg1, arg2):
     assert len(arg1) == len(arg2)
     return sum(map(lambda i, j: i * j, arg1, arg2))
 
-#print(scal([1,0,1,2,], [2,4,5,6]))
+print(scal([1,0,1,2,], [2,4,5,6]))
 
 def mat(arg1, arg2):
     assert len(arg1[0]) == len(arg2[0])
@@ -14,7 +14,7 @@ def mat(arg1, arg2):
         res.append(line)
     return res
 
-#print(*mat([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
+print(*mat([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
 
 def mat_2(arg1, arg2):
     assert len(arg1[0]) == len(arg2[0])
@@ -24,11 +24,11 @@ def mat_2(arg1, arg2):
         res.append(temp_res)
     return res
 
-#print(*mat_2([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
+print(*mat_2([[1,1],[2,2]], [[1,0], [0,1]]), sep = '\n')
 
 
 def mat_prod(arg1, arg2):
     assert len(arg1[0]) == len(arg2[0])
     return list(map(lambda x, y: list(map(scal, x, y)), list(map(lambda x: [x] * len(arg2), arg1)), [arg2] * len(arg2)))
 
-print(*mat_prod([[1,1],[2,2]], [[3,3], [4,4]]), sep = '\n')
+print(*mat_prod([[1,1],[2,2],[5,5]], [[3,4],[3,4],[3,4],[3,4]]), sep = '\n')
