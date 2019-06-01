@@ -21,23 +21,8 @@ def square_exp_2(x, n):
     else:
         return x * (x ** ((n-1)/2)) ** 2
 
-def square_exp_3(x, n):
-    return x ** n
 
-print(square_exp_2(2,101))
+print(square_exp_2(2,10))
 
-print(2 ** 101)
+print(2 ** 10)
 
-start1 = time.perf_counter()
-square_exp(2,101)
-time1 = time.perf_counter() - start1
-
-start2 = time.perf_counter()
-square_exp_2(2,101)
-time2 = time.perf_counter() - start2
-
-start3 = time.perf_counter()
-square_exp_3(2,101)
-time3 = time.perf_counter() - start3
-
-print(time2 > time3)
