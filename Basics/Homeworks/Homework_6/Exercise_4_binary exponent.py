@@ -1,10 +1,12 @@
-def bin_exp(x, k):
+def bin_exp(x, n):
     res = 1
-    n = 2 ** k
-    while n > 0:
-        n = n / 2
+    power = 2 ** n
+    while power >= 2:
+        power = power / 2
         x = x * x
-        res = res * x
-    return res
+    return x
 
-print(bin_exp(2,100))
+def bin_exp_2(x, n):
+    return (x ** n) ** 2
+
+print(bin_exp(2,3))

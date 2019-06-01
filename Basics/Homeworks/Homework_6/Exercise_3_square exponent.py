@@ -2,7 +2,7 @@ import time
 
 def square_exp(x, n):
     res = 1
-    while n > 0: 
+    while n > 0:
         if n % 2 == 0:
             n = n / 2
             x = x * x
@@ -13,7 +13,7 @@ def square_exp(x, n):
             x = x * x
     return res
 
-print(square_exp(2,101))
+print(square_exp(2,10))
 
 def square_exp_2(x, n):
     if n % 2 == 0:
