@@ -19,4 +19,5 @@ def fast_deter(arg):
 
 A = [[0,2,3], [1,3,4], [2,4,6]]
 print(fast_deter(A))
+print(fast_deter(B))
 
