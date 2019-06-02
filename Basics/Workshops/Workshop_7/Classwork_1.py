@@ -15,3 +15,5 @@ print(a_2[0,: -1])
 print(a_2[:-1, :-1])
 
 print(np.linalg.det(a_2))
+
+print(a_2.mean(axis = 1))
