@@ -32,14 +32,22 @@ def lu_decomposition(arg):
 
     return (L, U)
 
-def det(arg1, arg2, arg3):
-    l, u = lu_decomposition(arg1, arg2)
-    for i
+def det(arg1):
+    l, u = lu_decomposition(arg1)
+    p1, p2 = 1, 1
+    for i in range(len(l)):
+       p1 *= l[i][i]
+    for i in range(len(u)):
+        p2 *= u[i][i]
+    return p1 * p2
 
 
 
 A = [[15, 3, -16, 2], [3, -84, 1, -100], [14, 1, 400, -1], [2, 63, -1, -6]]
-print(identity_mat(A))
-print(lu_decomposition(A))
+print(det(A))
+
+import numpy as np
+
+print(np.linalg.det(A))
 
 
