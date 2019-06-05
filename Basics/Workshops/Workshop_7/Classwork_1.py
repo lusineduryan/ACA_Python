@@ -23,7 +23,6 @@ print(cond)
 print(a_2[cond])
 print(a_2[a_2 > 4])
 
-print()
 
 
 
