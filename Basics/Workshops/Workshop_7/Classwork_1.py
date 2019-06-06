@@ -21,6 +21,7 @@ print(a_2.mean(axis = 1))
 cond = a_2 >= 8
 print(cond)
 print(a_2[cond])
+
 print(a_2[a_2 > 4])
 
 
