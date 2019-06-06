@@ -12,6 +12,7 @@ print(a_2[:, 0])
 print(a_2[1])
 
 print(a_2[0,: -1])
+
 print(a_2[:-1, :-1])
 
 print(np.linalg.det(a_2))
@@ -21,7 +22,6 @@ print(a_2.mean(axis = 1))
 cond = a_2 >= 8
 print(cond)
 print(a_2[cond])
-
 print(a_2[a_2 > 4])
 
 
