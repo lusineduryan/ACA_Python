@@ -3,6 +3,7 @@ import numpy as np
 a = list(range(100))
 print(np.array(a).shape)
 b = np.array(a).reshape(-1,1)
+
 c = np.array(a).reshape(1,-1)
 print(b, b.shape)
 print(c, c.shape)
