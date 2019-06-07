@@ -8,6 +8,7 @@ print(b, b.shape)
 print(c, c.shape)
 
 a_2 = np.array([[1,2,3], [8,10,15],[8,9,2]], dtype = 'float')
+
 print(a_2[:, 0])
 print(a_2[1])
 
