@@ -15,6 +15,8 @@ def mult(arg):
                 arg = arg[:i - 1] + str(temp) + arg[i + 2:]
                 res = mult(arg)
             print(arg)
+        else:
+            res = mult(arg)
     return res
 
 a = '3+2*3+1'
