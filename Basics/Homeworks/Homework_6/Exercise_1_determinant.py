@@ -1,5 +1,8 @@
 def rec_deter(arg):
-    assert len(arg) == len(arg[0])
+    for i in arg:
+        assert len(arg) == len(i)
+    if len(arg) == 1:
+        return arg[0][0]
     if len(arg) == 2:
         return arg[0][0] * arg[1][1] - arg[0][1] * arg[1][0]
     else:
