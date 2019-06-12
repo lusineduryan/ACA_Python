@@ -17,3 +17,7 @@ else:
     print('No search result found')
 
 print(re.findall(pattern, 'eggspamsausagespamsdd'))
+
+text = 'My name is Lucy. Hi Lucy!'
+new_text = re.sub('Lucy', "Dave", text)
+print(new_text)
