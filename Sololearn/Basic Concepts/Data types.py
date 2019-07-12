@@ -6,6 +6,9 @@ d = "D"
 d += "L"
 
 print(type(int(a)))
+
 print(float(b))
+
 print(c)
+
 print(d)
